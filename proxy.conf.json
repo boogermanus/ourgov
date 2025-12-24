@@ -1,0 +1,12 @@
+{
+  "/geocoder": {
+    "target": "https://geocoding.geo.census.gov",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/geocoder": ""
+    },
+    "logLevel": "debug"
+  }
+}
+
