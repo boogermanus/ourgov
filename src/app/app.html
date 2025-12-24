@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-4 m-4">
-      <h1>Welcome to OurGov</h1>
+      <h1>{{title()}}</h1>
     </div>
   </div>
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <mat-form-field style="width: 100%">
           <mat-label>address</mat-label>
-          <input matInput type="text">
+          <input matInput type="text" [formControl]="addressControl">
         </mat-form-field>
       </div>
     </div>
