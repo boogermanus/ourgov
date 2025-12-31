@@ -30,7 +30,7 @@ export class App {
       .append('benchmark', 4)
       .append('vintage', 4)
       .append('format', 'json');
-    this.httpClient.get<string>('https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress', { params: httpParams})
+    this.httpClient.get<string>('/geocoder/geographies/onelineaddress', { params: httpParams})
       .subscribe(response => {console.log(response);})
   }
 }
